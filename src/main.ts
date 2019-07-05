@@ -26,6 +26,8 @@ export function configure(aurelia: Aurelia) {
         lng: "en",
         debug: true
       });
+    })
+    .globalResources(PLATFORM.moduleName('resources/message/message'));
 
   aurelia.use.developmentLogging(environment.debug ? 'debug' : 'warn');
 
